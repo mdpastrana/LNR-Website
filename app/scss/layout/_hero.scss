@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--header {
+    margin-top: 5rem;
+  }
+
+  &__image {
+    &--header {
+      margin-right: 10rem;
+    }
+
+    &--cd {
+      justify-self: flex-end;
+    }
+  }
+}

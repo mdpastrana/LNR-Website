@@ -2,7 +2,6 @@
   display: flex;
 
   &__link {
-    flex: 0 0 17.5rem;
     padding: 1rem 2rem 1rem 2.5rem;
     border: 0.3rem solid $color-red;
     border-radius: 1.5rem;
@@ -17,5 +16,6 @@
 
   &__text {
     font-family: $font-secondary;
+    margin-right: 3rem;
   }
 }
