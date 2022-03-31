@@ -1,0 +1,46 @@
+.header {
+  padding: 1.5rem 7.5rem;
+  height: 100vh;
+}
+
+.hero {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__image {
+    flex: 1;
+    margin-right: 10rem;
+  }
+}
+
+.heading {
+  flex: 1;
+  justify-self: stretch;
+
+  &__text {
+    font-family: $font-primary;
+    font-size: 5rem;
+    font-weight: normal;
+    color: $color-red;
+  }
+
+  &__line {
+    background: $color-black;
+    width: 13rem;
+    height: 0.3rem;
+    margin-top: 3rem;
+  }
+
+  &__desc {
+    font-family: $font-secondary;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+}

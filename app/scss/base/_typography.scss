@@ -1,0 +1,14 @@
+@font-face {
+  font-family: LNR;
+  src: url(/assets/Font/LNR.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$font-primary: "LNR", Arial;
+$font-secondary: "Playfair Display", serif;
+
+$color-black: #000000;
+$color-white: #ffffff;
+$color-red: #ff2e27;
+$color-neon: #0ef8f6;
