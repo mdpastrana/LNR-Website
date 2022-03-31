@@ -1,0 +1,53 @@
+.testimonial {
+  background-color: $color-red;
+  text-align: center;
+  padding: 15rem 0;
+
+  &__heading {
+    color: $color-white;
+  }
+
+  &__box {
+    position: relative;
+    display: inline-block;
+    margin-top: 10rem;
+  }
+
+  &__photo {
+    position: absolute;
+    top: -7rem;
+    left: -16rem;
+  }
+
+  &__quote {
+    display: inline-block;
+    width: 70rem;
+    border: 0.2rem dotted $color-white;
+    border-radius: 0.75rem 3rem 3rem 3rem;
+    color: $color-white;
+    padding: 5rem 0 2.5rem 0;
+
+    position: relative;
+
+    &--left {
+      position: absolute;
+      top: 1.5rem;
+      left: 2.5rem;
+    }
+
+    &--right {
+      position: absolute;
+      bottom: 1.5rem;
+      right: 2.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 5rem;
+  }
+
+  &__client {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}

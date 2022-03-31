@@ -12,3 +12,40 @@ $color-black: #000000;
 $color-white: #ffffff;
 $color-red: #ff2e27;
 $color-neon: #0ef8f6;
+
+.heading {
+  flex: 1;
+  justify-self: stretch;
+
+  &__text {
+    font-family: $font-primary;
+    font-size: 5rem;
+    font-weight: normal;
+    color: $color-red;
+  }
+
+  &__line {
+    background: $color-black;
+    width: 13rem;
+    height: 0.3rem;
+    margin-top: 3rem;
+  }
+
+  &__desc {
+    font-family: $font-secondary;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+}
+
+.title {
+  &__text {
+    font-family: $font-primary;
+    font-size: 2.9rem;
+  }
+}
