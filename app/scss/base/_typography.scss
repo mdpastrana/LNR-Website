@@ -7,14 +7,16 @@
 
 $font-primary: "LNR", Arial;
 $font-secondary: "Playfair Display", serif;
+$font-tertiary: "Montserrat", Arial;
 
 $color-black: #000000;
 $color-white: #ffffff;
 $color-red: #ff2e27;
 $color-neon: #0ef8f6;
+$color-neon-light: #d7fffb;
+$color-green: #00504a;
 
 .heading {
-  flex: 1;
   justify-self: stretch;
 
   &__text {
@@ -22,13 +24,6 @@ $color-neon: #0ef8f6;
     font-size: 5rem;
     font-weight: normal;
     color: $color-red;
-  }
-
-  &__line {
-    background: $color-black;
-    width: 13rem;
-    height: 0.3rem;
-    margin-top: 3rem;
   }
 
   &__desc {
@@ -41,11 +36,19 @@ $color-neon: #0ef8f6;
     display: inline-block;
     margin-top: 2rem;
   }
+
+  &--cd {
+    margin-bottom: 7.5rem;
+  }
 }
 
 .title {
   &__text {
     font-family: $font-primary;
     font-size: 2.9rem;
+  }
+
+  &__desc {
+    padding-top: 1.5rem;
   }
 }

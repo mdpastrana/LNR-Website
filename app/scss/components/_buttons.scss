@@ -1,6 +1,15 @@
 .btn {
   display: flex;
 
+  &--team {
+    margin-top: 6rem;
+  }
+
+  &--project {
+    margin-top: 10rem;
+    justify-content: center;
+  }
+
   &__link {
     padding: 1rem 2rem 1rem 2.5rem;
     border: 0.3rem solid $color-red;
@@ -12,10 +21,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &--team {
+      color: $color-green;
+      border-color: $color-green;
+    }
   }
 
   &__text {
     font-family: $font-secondary;
     margin-right: 3rem;
+  }
+}
+
+.line {
+  background: $color-black;
+  width: 13rem;
+  height: 0.3rem;
+
+  &--hero {
+    margin-top: 3rem;
+  }
+
+  &--team {
+    margin: 3rem auto 0 auto;
   }
 }

@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title></title>
-		<link rel="stylesheet" href="/dist/style.css" />
-		<script defer src="/dist/script.js"></script>
-	</head>
-	<body>
-		
-		
-		<div class="container">
-			<div class="header">
-				<div class="nav">
-					<a href=""><img src="Assets/Images/logo.svg" alt=""></a>
-					<a href=""><img class="btn__menu" src="assets/Images/burger-menu.svg" alt=""></a>
-				</div>
-				<div class="hero hero--header">
-					<div class="heading">
-						<h1 class="heading__text">MULTIPLE CREATIVE IDEAS&nbsp;TO&nbsp;CHANGE THE&nbsp;WORLD</h1>
-						<div class="heading__line"></div>
-						<div class="heading__desc">Lorem ipsum dolor sit consectetur adiscing elite.</div>
-						<div class="heading__btn">
-							<div class="btn">
-								<a class="btn__link" href="#">
-									<span class="btn__text">Let's Talk</span> 
-									<img class="btn__arrow" src="assets/Images/arrow-right.png" alt="">
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="hero__image hero__image--header">
-						<img src="assets/Images/hero-image.svg" alt="">
-					</div>
-				</div>
-			</div>
-			<section class="testimonial">
-				<div class="title">
-					<h1 class="testimonial__heading title__text">OUR CLIENT SAYS IT ALL!</h1>
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+  </head>
+  <body>
+    
+    
+    <div class="container"> <!-- CONTAINER START -->
+
+      <div class="header"> <!-- HEADER START -->
+        <nav class="nav"> <!-- NAV START-->
+          <a href=""><img src="Assets/Images/logo.svg" alt=""></a>
+          <a href=""><img class="btn__menu" src="assets/Images/burger-menu.svg" alt=""></a>
+        </nav> <!-- NAV END -->
+        <div class="hero hero--header">
+          <div class="heading heading--header">
+            <h1 class="heading__text">MULTIPLE CREATIVE IDEAS&nbsp;TO&nbsp;CHANGE THE&nbsp;WORLD</h1>
+            <div class="line line--hero"></div>
+            <div class="heading__desc">Lorem ipsum dolor sit consectetur adiscing elite.</div>
+            <div class="heading__btn">
+              <div class="btn">
+                <a class="btn__link" href="#">
+                  <span class="btn__text">Let's Talk</span> 
+                  <img class="btn__arrow" src="assets/Images/arrow-right.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__image hero__image--header">
+            <img src="assets/Images/hero-image.svg" alt="">
+          </div>
+        </div>
+      </div> <!-- HEADER START -->
+
+      <section class="testimonial"> <!-- TESTIMONIAL START -->
+        <div class="title">
+          <h1 class="testimonial__heading title__text">OUR CLIENT SAYS IT ALL!</h1>
+        </div>
         <div class="testimonial__box">
           <img class="testimonial__photo" src="assets/Images/testimonial-photo.png" alt="">
           <div class="testimonial__quote">
@@ -48,28 +50,94 @@
             <img class="testimonial__quote--right" src="assets/Images/testimonial-quote-right.png" alt="">
           </div>
         </div>
-			</section>
-		</div>
-    <div class="cd">
-      <div class="hero hero--cd">
-        <div class="heading">
-          <h1 class="heading__text">DON'T PREDICT THE <br /> FUTURE, CREATE IT</h1>
-          <div class="heading__line"></div>
-          <div class="heading__desc">We work hard so you don’t have to</div>
-          <div class="heading__btn">
-            <div class="btn">
-              <a class="btn__link" href="#">
-                <span class="btn__text">How It Works</span> 
-                <img class="btn__arrow" src="assets/Images/arrow-right.png" alt="">
-              </a>
+      </section>  <!-- TESTIMONIAL END -->
+
+      <section class="cd"> <!-- CREATIVE DESIGN START -->
+        <div class="hero hero--cd">
+          <div class="heading heading--cd">
+            <h1 class="heading__text">DON'T PREDICT THE <br /> FUTURE, CREATE IT</h1>
+            <div class="line line--hero"></div>
+            <div class="heading__desc">We work hard so you don’t have to</div>
+            <div class="heading__btn">
+              <div class="btn">
+                <a class="btn__link" href="#">
+                  <span class="btn__text">How It Works</span> 
+                  <img class="btn__arrow" src="assets/Images/arrow-right.png" alt="">
+                </a>
+              </div>
             </div>
           </div>
+          <div class="hero__image hero__image--cd">
+            <img src="assets/Images/cd-image.svg" alt="">
+          </div>
         </div>
-        <div class="hero__image hero__image--cd">
-          <img src="assets/Images/cd-image.svg" alt="">
-        </div>
-      </div>
-    </div>
+      </section> <!-- CREATIVE DESIGN START -->
 
-	</body>
+      <section class="team">
+        <div class="title">
+          <h1 class="team__heading team__heading--red title__text">MEET THE TEAM</h1>
+        	<p class="team__desc title__desc  title__text--team">We bring a multidisciplinary creative team of experts with bags of experience to the table, who will quickly get to the heart of what you’re looking to achieve.</p>
+        </div>
+        <div class="line line--team"></div>
+        <div class="team__teams">
+          <div class="team__box team__box--cd">
+            <img src="assets/Images/cd.svg" alt="" class="team__image">
+            <h1 class="team__heading team__heading--green">CREATIVE DESIGNERS</h1>
+            <p class="team__subheading">We creating conveys the emotions <br /> and answers all the questions visually</p>
+            <div class="btn btn--team">
+              <a class="btn__link btn__link--team" href="#">
+                <span class="btn__text">Read More</span> 
+                <img class="btn__arrow" src="assets/Images/arrow-right-green.png" alt="">
+              </a>
+            </div> 
+          </div>
+          <div class="team__box team__box--ct">
+            <img src="assets/Images/ct.svg" alt="" class="team__image team__image--ct">
+            <h1 class="team__heading team__heading--green">CREATIVE TECH</h1>
+            <p class="team__subheading">We see patterns, draw conclusions, and find solutions to complex <br /> problems that might appear during the coding process.</p>
+            <div class="btn btn--team">
+              <a class="btn__link btn__link--team" href="#">
+                <span class="btn__text">Read More</span> 
+                <img class="btn__arrow" src="assets/Images/arrow-right-green.png" alt="">
+              </a>
+            </div> 
+          </div>
+        </div>
+      </section>  <!-- CREATIVE DESIGN END-->
+
+      <section class="project">
+        <div class="title">
+          <h1 class="project__heading title__text">PROJECTS</h1>
+        	<p class="project__desc title__desc title__text--project">Lorem ipsum dolor sit amet, consectetur adiscing elite.</p>
+        </div>
+        <div class="line line--team"></div>
+        <div class="project__box">
+           <div class="project__item project__item--1">
+              <img src="assets/Images/project-item-1.png" alt="">
+              <h1 class="project__title">Sample Project 1</h1>
+              <p class="project__desc">
+                Lorem ipsum dolor sit amet, consectetur adiscing elite.
+              </p>
+            </div>
+            <div class="project__item project__item--2">
+              <img src="assets/Images/project-item-2.png" alt="">
+              <h1 class="project__title">Sample Project 2</h1>
+              <p class="project__desc">
+                Lorem ipsum dolor sit amet, consectetur adiscing elite.
+              </p>
+            </div>
+        </div>
+        <div class="btn btn--project">
+          <a class="btn__link btn__link--project" href="#">
+            <span class="btn__text">Want to see more?</span> 
+            <img class="btn__arrow" src="assets/Images/arrow-right.png" alt="">
+          </a>
+        </div> 
+      </section>
+
+    </div> <!-- CONTAINER END -->
+
+
+
+  </body>
 </html>
