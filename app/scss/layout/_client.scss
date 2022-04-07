@@ -1,0 +1,27 @@
+.client {
+  background-color: $color-neon-light;
+  padding: 13rem 0 3rem 0;
+  text-align: center;
+
+  &__heading {
+    color: $color-red;
+  }
+
+  &__item {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 5rem;
+    justify-content: center;
+  }
+
+  &__photo {
+    width: 20rem;
+  }
+
+  &__disclaimer {
+    margin-top: 10rem;
+    font-family: $font-secondary;
+    font-size: 1.2rem;
+  }
+}
