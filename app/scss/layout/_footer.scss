@@ -1,0 +1,95 @@
+.footer {
+  background-color: $color-white;
+  padding: 4.5rem 7.5rem;
+
+  &--contact {
+    padding: 6.5rem 7.5rem 4.5rem 7.5rem;
+  }
+
+  &__details {
+    display: flex;
+    padding-bottom: 7.5rem;
+
+    & > *:not(:last-child) {
+      margin-right: 15rem;
+    }
+  }
+
+  &__item {
+    &--1 {
+      width: 40rem;
+    }
+
+    &--2 {
+      width: 28rem;
+    }
+  }
+
+  &__item:not(:first-child) {
+    padding-top: 3rem;
+  }
+
+  &__desc {
+    padding-top: 3rem;
+  }
+
+  &__item h1 {
+    font-family: $font-tertiary;
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    padding-top: 2.5rem;
+
+    &--location {
+      align-items: flex-start;
+    }
+  }
+
+  &__icon {
+    margin-right: 2rem;
+  }
+
+  &__email {
+    text-decoration: none;
+    color: $color-black;
+  }
+
+  &__sm-box {
+    display: flex;
+    padding-top: 2.5rem;
+  }
+
+  &__box {
+    border-top: 0.2rem solid $color-gray;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+  }
+
+  &__copyright {
+    font-family: $font-tertiary;
+    font-size: 1.2rem;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-right: 4rem;
+  }
+
+  &__nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-tertiary;
+    font-size: 1.2rem;
+    color: $color-black;
+  }
+}

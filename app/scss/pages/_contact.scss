@@ -1,0 +1,64 @@
+// CONTACT SECTION
+
+// ACROSS THE GLOBE SECTION
+.globe {
+  padding: 10rem 7.5rem 20rem 7.5rem;
+
+  &__location-box {
+    margin-top: 5rem;
+    display: flex;
+  }
+
+  &__location {
+    &:not(:last-child) {
+      margin-right: 9rem;
+    }
+  }
+
+  &__location h1 {
+    font-family: $font-tertiary;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+
+  &__location p {
+    &:not(:last-child) {
+      margin-bottom: 1 rem;
+    }
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input,
+  &__txtarea {
+    border: 1px solid $color-gray;
+    outline: none;
+    font-family: $font-secondary;
+    font-size: 1.8rem;
+    color: $color-gray-dark;
+    font-style: italic;
+    padding: 1rem;
+    width: 48rem;
+    margin-bottom: 3rem;
+
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+
+  &__txtarea {
+    height: 4.6rem;
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+}
+
+// MAP SECTION
+.map {
+  width: 100%;
+  height: 100vh;
+}

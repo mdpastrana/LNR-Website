@@ -4,13 +4,34 @@
   align-items: center;
   justify-content: space-between;
 
+  &--globe {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
   &__image {
     &--header {
       margin-right: 10rem;
     }
 
+    &--contact {
+      margin-top: 10rem;
+    }
+
     &--cd {
       justify-self: flex-end;
+    }
+
+    &--globe {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &__photo {
+    &--globe {
+      margin-top: 7.5rem;
     }
   }
 }

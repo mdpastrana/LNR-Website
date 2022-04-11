@@ -15,21 +15,50 @@ $color-red: #ff2e27;
 $color-neon: #0ef8f6;
 $color-neon-light: #d7fffb;
 $color-green: #00504a;
+$color-gray: #c4c4c4;
+$color-gray-dark: #9d9d9d;
+$color-gray-light: #dcdcdc;
 
 .heading {
   justify-self: stretch;
+
+  &--header {
+    flex: 0 0 62rem;
+  }
+
+  &--contact {
+    flex: 0 0 50rem;
+  }
+
+  &--globe {
+    flex: 0 0 65rem;
+    margin-right: 5rem;
+  }
 
   &__text {
     font-family: $font-primary;
     font-size: 5rem;
     font-weight: normal;
     color: $color-red;
+
+    &--globe {
+      font-size: 4rem;
+      margin-top: 1rem;
+    }
   }
 
   &__desc {
     font-family: $font-secondary;
     font-size: 2rem;
     margin-top: 2rem;
+
+    &--globe {
+      margin-top: 1rem;
+    }
+
+    &--small {
+      font-size: 1.8rem;
+    }
   }
 
   &__btn {
@@ -46,6 +75,10 @@ $color-green: #00504a;
   &__text {
     font-family: $font-primary;
     font-size: 2.9rem;
+
+    &--project {
+      text-align: center !important;
+    }
   }
 
   &__desc {
