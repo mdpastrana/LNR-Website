@@ -14,6 +14,7 @@ $color-white: #ffffff;
 $color-red: #ff2e27;
 $color-neon: #0ef8f6;
 $color-neon-light: #d7fffb;
+$color-neon-light-2: #d1fefb;
 $color-green: #00504a;
 $color-gray: #c4c4c4;
 $color-gray-dark: #9d9d9d;
@@ -68,6 +69,9 @@ $color-gray-light: #dcdcdc;
 
   &--cd {
     margin-bottom: 7.5rem;
+    margin-right: -20rem;
+    position: relative;
+    display: inline-block;
   }
 }
 

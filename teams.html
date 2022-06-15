@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+  </head>
+  <body>
+    
+    
+    <div class="tcontainer"> <!-- CONTAINER START -->
+
+      <header id="theader" class="theader">
+        <a href="" class="theader__logo theader__content"><img src="/assets/Images/side-nav-logo.png" alt=""></a>
+        <nav class="theader__tnav">
+          <ul class="theader__list theader__content">
+            <li class="theader__item"><a class="theader__link" href="" target="_blank">Home</a></li>
+            <li class="theader__item"><a class="theader__link" href="" target="_blank">Services</a></li>
+            <li class="theader__item"><a class="theader__link" href="" target="_blank">Meet the team</a></li>
+            <li class="theader__item"><a class="theader__link" href="" target="_blank">Projects</a></li>
+            <li class="theader__item"><a class="theader__link" href="" target="_blank">Clients</a></li>
+            <li class="theader__item"><a class="theader__link" href="" target="_blank">Contact Us</a></li>
+          </ul>
+          <a id="theader__tbtn" class="theader__tbtn"><img src="/assets/Images/tbtn.png" alt=""></a>
+        </nav>
+        <div class="theader__sm theader__content">
+          <a href="" class="theader__icon"><img src="/assets/Images/fb2.png" alt=""></a>
+          <a href="" class="theader__icon"><img src="/assets/Images/tw2.png" alt=""></a>
+          <a href="" class="theader__icon"><img src="/assets/Images/ig2.png" alt=""></a>
+        </div>
+      </header>
+      <main class="tmain">
+
+        <!-- Slideshow container -->
+        <div class="tmain__container">
+          <!-- Full-width images with number and caption text -->
+          <div class="tmain__slides fade">
+            <img class="tmain__photo" src="/assets/Images/cd3.png" alt="">
+          </div>
+
+          <div class="tmain__slides fade">
+            <img class="tmain__photo" src="/assets/Images/ct3.png" alt="">
+          </div>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div class="tmain__dots" style="text-align:center">
+          <span class="tmain__dot" onclick="currentSlide(1)"></span>
+          <span class="tmain__dot" onclick="currentSlide(2)"></span>
+        </div>
+      </main>
+
+    </div> <!-- CONTAINER END -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      let btn = document.querySelector("#theader__tbtn");
+      let sidebar = document.querySelector("#theader");
+      let nav = document.querySelectorAll(".theader__nav");
+      let content = document.querySelectorAll('.theader__content');
+      
+      btn.onclick = function() {
+        sidebar.classList.toggle("theader__active");
+
+          for(var i = 0; i < content.length; i++){
+            content[i].classList.toggle("theader__opacity");
+        }
+      }
+
+    </script>
+
+    <script>
+                
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("tmain__slides");
+        let dots = document.getElementsByClassName("tmain__dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+
+    </script>
+
+  </body>
+</html>

@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="/dist/style.css" />
     <script defer src="/dist/script.js"></script>
+
   </head>
   <body>
     
@@ -15,49 +16,55 @@
         <a href="index.html"><img src="Assets/Images/logo.svg" alt=""></a>
         <a href=""><img class="btn__menu" src="assets/Images/burger-menu.svg" alt=""></a>
       </nav> <!-- NAV END -->
-      <section class="project project--page"> <!-- CREATIVE PROJECT START -->
-        <div class="title">
-          <h1 class="project__heading title__text">PROJECTS</h1>
-        	<p class="project__desc title__desc title__text--project">Lorem ipsum dolor sit amet, consectetur adiscing elite.</p>
+      <section class="process">
+        <h1 class="process__title">How it works</h1>
+        <ul class="process__list">
+          <li class="process__item"><a class="process__link b-nav-tab active" href="#web-app-design" data-tab="web-app-design" class="process__tab active">Web & App Design</a></li>
+          <li class="process__item"><a class="process__link b-nav-tab" href="#branding" data-tab="branding" class="process__tab">Branding</a></li>
+          <li class="process__item"><a class="process__link b-nav-tab" href="#marketing-assets" data-tab="marketing-assets" class="process__tab">Marketing Assets</a></li>
+          <li class="process__item"><a class="process__link b-nav-tab" href="#landing-page-design" data-tab="landing-page-design" class="process__tab">Landing Page Design</a></li>
+          <li class="process__item"><a class="process__link b-nav-tab" href="#print-design" data-tab="print-design" class="process__tab">Print Design</a></li>
+          <li class="process__item"><a class="process__link b-nav-tab" href="#digital-sm-ads" data-tab="digital-sm-ads" class="process__tab">Digital & Social Media Ads</a></li>
+        </ul>
+        
+        <div class="process__content">
+          <div id="web-app-design" class="process__tab-content process__web b-tab active">
+            <div class="process__box process__box--1">
+              <img class="process__photo process__photo--1" src="assets/Images/01.svg" alt="">
+              <div class="process__text-box process__text-box--1">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+            <div class="process__box">
+              <div class="process__text-box process__text-box--2">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+              <img class="process__photo process__photo--2" src="assets/Images/02.svg" alt="">
+            </div>
+            <div class="process__box">
+              <img class="process__photo process__photo--3" src="assets/Images/03.svg" alt="">
+              <div class="process__text-box process__text-box--3">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+          </div>
+          <div id="branding" class="process__tab-content b-tab">
+            Branding 
+          </div>
+          <div id="marketing-assets" class="process__tab-content b-tab">
+            Marketing assets
+          </div>
+          <div id="landing-page-design" class="process__tab-content b-tab">
+            Landing page design
+          </div>
+          <div id="print-design" class="process__tab-content b-tab">
+            Print design
+          </div>
+          <div id="digital-sm-ads" class="process__tab-content b-tab">
+            Digital & Social Media Ads
+          </div>
         </div>
-        <div class="line line--title"></div>
-        <div class="project__box">
-           <div class="project__item project__item--1">
-              <img src="assets/Images/project-item-1.png" alt="">
-              <h1 class="project__title">Sample Project 1</h1>
-              <p class="project__desc">
-                Lorem ipsum dolor sit amet, consectetur adiscing elite.
-              </p>
-            </div>
-            <div class="project__item project__item--2">
-              <img src="assets/Images/project-item-2.png" alt="">
-              <h1 class="project__title">Sample Project 2</h1>
-              <p class="project__desc">
-                Lorem ipsum dolor sit amet, consectetur adiscing elite.
-              </p>
-            </div>
-            <div class="project__item project__item--3">
-              <img src="assets/Images/project-item-4.png" alt="">
-              <h1 class="project__title">Sample Project 1</h1>
-              <p class="project__desc">
-                Lorem ipsum dolor sit amet, consectetur adiscing elite.
-              </p>
-            </div>
-            <div class="project__item project__item--4">
-              <img src="assets/Images/project-item-5.png" alt="">
-              <h1 class="project__title">Sample Project 2</h1>
-              <p class="project__desc">
-                Lorem ipsum dolor sit amet, consectetur adiscing elite.
-              </p>
-            </div>
-        </div>
-        <!-- <div class="btn btn--project">
-          <a class="btn__link btn__link--project" href="#">
-            <span class="btn__text">Want to see more?</span> 
-            <img class="btn__arrow" src="assets/Images/arrow-right.png" alt="">
-          </a>
-        </div>  -->
-      </section> <!-- CREATIVE PROJECT END -->
+      </section>
 
       <footer class="footer footer--contact">
         <div class="footer__details">
