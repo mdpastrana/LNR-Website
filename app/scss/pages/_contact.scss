@@ -4,14 +4,36 @@
 .globe {
   padding: 10rem 7.5rem 20rem 7.5rem;
 
+  @media only screen and (max-width: 43.75em) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 5rem 3rem;
+  }
+
   &__location-box {
     margin-top: 5rem;
     display: flex;
+
+    @media only screen and (max-width: 28.75em) {
+      flex-direction: column;
+    }
   }
 
   &__location {
     &:not(:last-child) {
       margin-right: 9rem;
+
+      @media only screen and (max-width: 28.75em) {
+        margin-right: 0;
+      }
+    }
+
+    &--2 {
+      @media only screen and (max-width: 28.75em) {
+        margin-top: 3rem;
+      }
     }
   }
 
@@ -19,6 +41,10 @@
     font-family: $font-tertiary;
     text-transform: uppercase;
     padding-bottom: 2rem;
+
+    @media only screen and (max-width: 36.25em) {
+      font-size: 2rem;
+    }
   }
 
   &__location p {
@@ -43,6 +69,10 @@
     padding: 1rem;
     width: 48rem;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 36.25em) {
+      width: 100%;
+    }
 
     &::placeholder {
       color: $color-gray;

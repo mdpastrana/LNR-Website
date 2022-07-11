@@ -12,6 +12,7 @@ $font-tertiary: "Montserrat", Arial;
 $color-black: #000000;
 $color-white: #ffffff;
 $color-red: #ff2e27;
+$color-red-light: #ff9692;
 $color-neon: #0ef8f6;
 $color-neon-light: #d7fffb;
 $color-neon-light-2: #d1fefb;
@@ -25,15 +26,50 @@ $color-gray-light: #dcdcdc;
 
   &--header {
     flex: 0 0 62rem;
+
+    @media only screen and (max-width: 101.25em) {
+      flex: 0 0 60rem;
+    }
+
+    @media only screen and (max-width: 78.125em) {
+      flex: 0 0 50rem;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      flex: 0 0 45rem;
+    }
+
+    @media only screen and (max-width: 59.375em) {
+      order: 1;
+      padding-top: 5rem;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: 59.375em) {
+      flex: 1;
+    }
   }
 
   &--contact {
     flex: 0 0 50rem;
+
+    @media only screen and (max-width: 65.9375em) {
+      order: 2;
+      margin-top: 3rem;
+    }
   }
 
   &--globe {
     flex: 0 0 65rem;
     margin-right: 5rem;
+
+    @media only screen and (max-width: 98.75em) {
+      flex: 1;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      margin-right: 0;
+    }
   }
 
   &__text {
@@ -41,6 +77,26 @@ $color-gray-light: #dcdcdc;
     font-size: 5rem;
     font-weight: normal;
     color: $color-red;
+
+    @media only screen and (max-width: 101.25em) {
+      font-size: 4.5rem !important;
+    }
+
+    @media only screen and (max-width: 78.125em) {
+      font-size: 4rem !important;
+    }
+
+    @media only screen and (max-width: 73.75em) {
+      font-size: 3.5rem !important;
+    }
+
+    @media only screen and (max-width: 68.75em) {
+      font-size: 3rem !important;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 2.5rem !important;
+    }
 
     &--globe {
       font-size: 4rem;
@@ -52,6 +108,10 @@ $color-gray-light: #dcdcdc;
     font-family: $font-secondary;
     font-size: 2rem;
     margin-top: 2rem;
+
+    @media only screen and (max-width: 68.75em) {
+      font-size: 1.75rem;
+    }
 
     &--globe {
       margin-top: 1rem;
@@ -72,6 +132,35 @@ $color-gray-light: #dcdcdc;
     margin-right: -20rem;
     position: relative;
     display: inline-block;
+    width: 58rem;
+    pointer-events: auto !important;
+
+    @media only screen and (max-width: 97.5em) {
+      width: 52rem;
+    }
+
+    @media only screen and (max-width: 78.125em) {
+      width: 46rem;
+    }
+
+    @media only screen and (max-width: 73.75em) {
+      width: 35rem;
+    }
+
+    @media only screen and (max-width: 53.125em) {
+      margin-bottom: 16rem;
+      margin-right: 0;
+      margin-top: -100rem;
+      order: 2;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 21.5625em) {
+      margin-top: -90rem;
+    }
   }
 }
 
@@ -79,6 +168,10 @@ $color-gray-light: #dcdcdc;
   &__text {
     font-family: $font-primary;
     font-size: 2.9rem;
+
+    @media only screen and (max-width: 67.5em) {
+      font-size: 2.5rem;
+    }
 
     &--project {
       text-align: center !important;

@@ -2,7 +2,15 @@
   margin-top: -11.5rem;
   background-color: $color-neon-light;
   text-align: center;
-  padding: 20rem 0 15rem 0;
+  padding: 20rem 3rem 15rem 3rem;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 10rem 3rem 10rem 3rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 5rem 3rem;
+  }
 
   &__heading {
     font-family: $font-primary;
@@ -11,8 +19,13 @@
     font-weight: bold;
     padding-top: 1.5rem;
 
+    @media only screen and (max-width: 31.25em) {
+      font-size: 2.5rem;
+    }
+
     &--green {
       color: $color-green;
+      font-size: 2rem;
     }
 
     &--red {
@@ -30,6 +43,10 @@
     color: $color-black;
     width: 56rem;
     margin: 0 auto;
+
+    @media only screen and (max-width: 39.6875em) {
+      width: 100%;
+    }
   }
 
   &__teams {
@@ -38,6 +55,10 @@
     flex-wrap: wrap;
     text-align: center;
     margin-top: 9rem;
+
+    @media only screen and (max-width: 70.625em) {
+      flex-direction: column;
+    }
   }
 
   &__box {
@@ -47,14 +68,34 @@
     &--ct {
       position: relative;
       margin-top: -2rem;
+
+      @media only screen and (max-width: 70.625em) {
+        margin-top: 8rem;
+      }
     }
   }
 
   &__image {
+    &--cd {
+      @media only screen and (max-width: 31.25em) {
+        width: 15rem;
+      }
+    }
+
     &--ct {
       padding-left: 32rem;
       padding-bottom: 2rem;
       margin-bottom: -15.5rem;
+
+      @media only screen and (max-width: 53.125em) {
+        width: 30rem;
+        padding-bottom: 15rem;
+        padding-left: 5rem;
+      }
+
+      @media only screen and (max-width: 31.25em) {
+        width: 20rem;
+      }
     }
   }
 }

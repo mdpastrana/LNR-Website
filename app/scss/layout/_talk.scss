@@ -3,17 +3,70 @@
   padding: 25rem 7rem 15rem 20rem;
   text-align: center;
 
+  @media only screen and (max-width: 93.75em) {
+    padding: 25rem 10rem 10rem 10rem;
+  }
+
+  @media only screen and (max-width: 53.125em) {
+    padding: 20rem 5rem 5rem 5rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 20rem 3rem 5rem 3rem;
+  }
+
   &__container {
     background-color: $color-white;
     padding: 7rem 0 4.75rem 0;
     border-radius: 3rem;
     position: relative;
+
+    @media only screen and (max-width: 93.75em) {
+      padding: 13rem 0 4.75rem 0;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 78.125em) {
+      padding: 10rem 0 4.75rem 0;
+    }
+
+    @media only screen and (max-width: 53.125em) {
+      padding: 8rem 0 5rem 0;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 25em) {
+      padding: 5.5rem 0 2.5rem 0;
+    }
   }
 
   &__photo {
     position: absolute;
     top: -15rem;
     left: -11rem;
+
+    @media only screen and (max-width: 93.75em) {
+      width: 33rem;
+      top: -20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media only screen and (max-width: 53.125em) {
+      width: 25rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 20rem;
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__heading {
@@ -22,5 +75,23 @@
     font-size: 7.2rem;
     color: $color-red;
     padding-left: 40rem;
+
+    @media only screen and (max-width: 112.5em) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: 93.75em) {
+      font-size: 3rem;
+      padding-left: 0;
+    }
+
+    @media only screen and (max-width: 53.125em) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 28.125em) {
+      font-size: 2rem;
+      padding: 1rem;
+    }
   }
 }

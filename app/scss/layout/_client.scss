@@ -1,27 +1,51 @@
 .client {
   background-color: $color-neon-light;
-  padding: 13rem 0 3rem 0;
+  padding: 13rem 3rem 3rem 3rem;
   text-align: center;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 10rem 3rem 3rem 3rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 5rem 3rem 3rem 3rem;
+  }
 
   &__heading {
     color: $color-red;
   }
 
   &__item {
-    margin-top: 10rem;
+    width: 53%;
+    margin: 10rem auto 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fit, 20rem);
+
     grid-gap: 5rem;
     justify-content: center;
+
+    @media only screen and (max-width: 31.25em) {
+      margin: 5rem auto 0 auto;
+      grid-gap: 2rem;
+    }
   }
 
   &__photo {
     width: 20rem;
+
+    @media only screen and (max-width: 31.25em) {
+      width: 15rem;
+      margin: 0 auto;
+    }
   }
 
   &__disclaimer {
     margin-top: 10rem;
     font-family: $font-secondary;
     font-size: 1.2rem;
+
+    @media only screen and (max-width: 31.25em) {
+      margin-top: 5rem;
+    }
   }
 }

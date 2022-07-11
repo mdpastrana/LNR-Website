@@ -4,34 +4,104 @@
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (max-width: 59.375em) {
+    flex-direction: column;
+  }
+
+  &--contact {
+    @media only screen and (max-width: 65.9375em) {
+      flex-direction: column;
+    }
+  }
+
   &--globe {
     align-items: flex-start;
     justify-content: center;
+
+    @media only screen and (max-width: 81.25em) {
+      flex-direction: column;
+    }
   }
 
   &__image {
+    &--rocket {
+      @media only screen and (max-width: 101.25em) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 59.375em) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: 31.25em) {
+        width: 25rem;
+      }
+    }
+
     &--header {
       margin-right: 10rem;
+
+      @media only screen and (max-width: 101.25em) {
+        margin-right: 0;
+      }
+
+      @media only screen and (max-width: 59.375em) {
+        @include flex-center;
+        padding-top: 5rem;
+      }
     }
 
     &--contact {
       margin-top: 10rem;
-    }
 
-    &--cd {
-      // justify-self: flex-end;
+      @media only screen and (max-width: 43.75em) {
+        margin-top: 15rem;
+      }
     }
 
     &--globe {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+
+      @media only screen and (max-width: 81.25em) {
+        align-self: center;
+        @include flex-center;
+        padding-top: 8rem;
+      }
     }
   }
 
   &__photo {
+    @media only screen and (max-width: 65.9375em) {
+      width: 50rem;
+    }
+
+    &--contact {
+      @media only screen and (max-width: 43.75em) {
+        width: 35rem;
+      }
+
+      @media only screen and (max-width: 25em) {
+        width: 100%;
+      }
+    }
+
     &--globe {
       margin-top: 7.5rem;
+
+      @media only screen and (max-width: 81.25em) {
+        margin-top: 5rem;
+        width: 50rem;
+      }
+
+      @media only screen and (max-width: 43.75em) {
+        width: 35rem;
+      }
+
+      @media only screen and (max-width: 25em) {
+        width: 100%;
+      }
     }
   }
 }

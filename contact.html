@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>LNR Creatives</title>
     <link rel="stylesheet" href="/dist/style.css" />
     <script defer src="/dist/script.js"></script>
   </head>
@@ -11,26 +11,41 @@
     
     
     <div class="container"> <!-- CONTAINER START -->
-
       <div class="header"> <!-- HEADER START -->
         <nav class="nav"> <!-- NAV START-->
-          <a href="index.html"><img src="Assets/Images/logo.svg" alt=""></a>
-          <a href=""><img class="btn__menu" src="assets/Images/burger-menu.svg" alt=""></a>
+          <a href="index.html"><img class="nav__logo" src="Assets/Images/logo.svg" alt=""></a>
+          <div class="hamburger">
+            <input type="checkbox" class="hamburger__toggler">
+            <div class="hamburger__box"><div></div></div>
+            <div class="hamburger__menu">
+              <div class="hamburger__overlay">
+                <div>
+                  <ul class="hamburger__list">
+                    <li class="hamburger__item"><a class="hamburger__link" href="index.html" target="_blank">Home</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#team" target="_blank">About Us</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#project" target="_blank">Projects</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#cd" target="_blank">Services</a></li>
+                    <li class="hamburger__item"><a class="hamburger__link" href="#talk" target="_blank">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav> <!-- NAV END -->
         <div class="hero hero--contact">
           <div class="heading heading--contact">
-            <h1 class="heading__text">CONTACT US</h1>
-            <div class="heading__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, deleniti? Esse incidunt exercitationem ad quidem, fugiat facere debitis.</div>
+            <h1 class="heading__text contact-animate">CONTACT US</h1>
+            <div class="heading__desc contact-animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, deleniti? Esse incidunt exercitationem ad quidem, fugiat facere debitis.</div>
           </div >
           <div class="hero__image hero__image--contact">
-            <img src="assets/Images/contact-image.svg" alt="">
+            <img width="100%" class="hero__photo hero__photo--contact contact-animate" src="assets/Images/contact-image.svg" alt="">
           </div>
         </div>
       </div> <!-- HEADER START -->
 
       <section class="globe"> <!-- GLOBE START -->
         <div class="hero hero--globe">
-          <div class="heading heading--globe">
+          <div class="heading heading--globe globe-animate">
             <div class="heading__desc heading__desc--globe-upper heading__desc--small">Lorem Ipsum</div>
             <h1 class="heading__text heading__text--globe">ACROSS THE GLOBE</h1>
             <div class="heading__desc heading__desc--globe">Curabitur tortor nec eleifend, justo urna ante</div>
@@ -53,19 +68,19 @@
               </div>
             </div>
           </div>
-          <div class="hero__image hero__image--globe">
+          <div class="hero__image hero__image--globe globe-animate">
             <div class="globe__input-box">
               <input type="email" placeholder="Email" class="globe__input globe__input--email">
               <input type="name" placeholder="Name" class="globe__input globe__input--name">
               <textarea placeholder="Message" class="globe__txtarea globe__input--message" name="" id="" cols="30" rows="10"></textarea>
               <div class="btn btn--globe">
-                <a class="btn__link btn__link--globe" href="#">
+                <a class="btn__link btn__link--red btn__link--globe" href="#">
                   <span class="btn__text">Submit</span> 
-                  <img class="btn__arrow" src="assets/Images/arrow-right.png" alt="">
+                  <div class="btn__arrow btn__arrow--red"></div>
                 </a>
               </div> 
             </div>
-            <img class="hero__photo--globe" src="assets/Images/globe-image.svg" alt="">
+            <img width="100%" class="hero__photo--globe" src="assets/Images/globe-image.svg" alt="">
           </div>
         </div>
       </section> <!-- GLOBE START -->
@@ -74,15 +89,15 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2581743131786!2d121.07386641535177!3d14.584359281383271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7cf089cc4eb%3A0x440aa266a0a7944!2sStraightArrow%20Corporation!5e0!3m2!1sen!2sph!4v1649699953428!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section> <!-- MAP START -->
 
-      <footer class="footer footer--contact">
+      <footer class="footer">
         <div class="footer__details">
-          <div class="footer__item footer__item--1">
-            <img src="assets/Images/footer-logo.png" alt="" class="footer__logo">
+          <div class="footer__item footer__item--1 footer-animate">
+            <a href="#home"><img src="assets/Images/footer-logo.png" alt="" class="footer__logo"></a>
             <p class="footer__desc">
               Lorem ipsum dolor sit amet, consectetur adyiisc elit, sed do eiusmod tempr incididunt ut laboteyr et dolore magna aliqua. Ut enim ad minimaltery veniam, quis nostrud exercitation ullamcommen laboris nisi ut aliquipe ex  consectur commodo.
             </p>
           </div>
-          <div class="footer__item footer__item--2">
+          <div class="footer__item footer__item--2 footer-animate">
             <h1>Contact Us</h1>
             <div class="footer__icon-box footer__icon-box--location">
               <img class="footer__icon" src="assets/Images/location.svg" alt="" class="">
@@ -98,24 +113,26 @@
               <a class="footer__email" href="mailto:sample.email@LNRCreatives.co">sample.email@LNRCreatives.co</a>
             </div>
           </div>
-          <div class="footer__item footr__item--3">
+          <div class="footer__item footr__item--3 footer-animate">
             <h1>Follow Us</h1>
             <div class="footer__sm-box">
-              <a href="" target="_blank"><img class="footer__icon" src="assets/Images/fb.svg" alt="" class=""></a>
-              <a href="" target="_blank"><img class="footer__icon" src="assets/Images/tw.svg" alt="" class=""></a>
-              <a href="" target="_blank"><img class="footer__icon" src="assets/Images/ig.svg" alt="" class=""></a>
+              <a href="" target="_blank"><svg class="footer__icon" width="12" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="footer__icon" d="m11.053 10.957.57-3.525H8.06V5.144a1.682 1.682 0 0 1 .111-.774c.097-.248.252-.47.452-.653.2-.183.442-.32.705-.403.264-.083.544-.108.82-.074h1.618v-3A20.752 20.752 0 0 0 8.9 0c-2.933 0-4.85 1.688-4.85 4.745v2.687H.787v3.525H4.05v8.522H8.06v-8.522h2.992Z" fill="#000"/></svg></a>
+
+              <a href="" target="_blank"><svg class="footer__icon" width="21" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="footer__icon" d="M18.508 3.943c.012.166.012.331.012.5a10.33 10.33 0 0 1-.85 4.17 10.778 10.778 0 0 1-2.48 3.537 11.428 11.428 0 0 1-3.722 2.355 11.894 11.894 0 0 1-4.39.808 11.81 11.81 0 0 1-6.176-1.718c.323.034.647.05.972.047a8.329 8.329 0 0 0 4.993-1.632 4.169 4.169 0 0 1-2.327-.753A3.84 3.84 0 0 1 3.107 9.36c.251.038.505.058.76.06a4.465 4.465 0 0 0 1.057-.131 4.064 4.064 0 0 1-2.317-1.327 3.705 3.705 0 0 1-.908-2.422v-.051c.557.296 1.18.462 1.818.485A3.831 3.831 0 0 1 1.83 3.656 3.66 3.66 0 0 1 2.271.868 11.342 11.342 0 0 0 5.97 3.705a11.906 11.906 0 0 0 4.593 1.163 4.111 4.111 0 0 1-.099-.879c0-.767.243-1.516.697-2.15a3.996 3.996 0 0 1 1.85-1.407 4.224 4.224 0 0 1 2.362-.174 4.08 4.08 0 0 1 2.056 1.118A8.176 8.176 0 0 0 19.98.453a3.853 3.853 0 0 1-1.768 2.105 8.399 8.399 0 0 0 2.316-.59 8.424 8.424 0 0 1-2.017 1.974l-.004.001Z" fill="#000"/></svg></a>
+
+              <a href="" target="_blank"><svg class="footer__icon--ig" width="22" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.332 1.324h9.12c1.21 0 2.371.457 3.227 1.27a4.228 4.228 0 0 1 1.337 3.065v8.665c0 .57-.117 1.134-.346 1.66a4.328 4.328 0 0 1-.99 1.408 4.587 4.587 0 0 1-1.48.94 4.773 4.773 0 0 1-1.747.331H6.332c-.6 0-1.194-.112-1.748-.33a4.587 4.587 0 0 1-1.48-.94 4.327 4.327 0 0 1-.99-1.409 4.148 4.148 0 0 1-.346-1.66V5.66c0-1.15.481-2.252 1.337-3.065a4.688 4.688 0 0 1 3.227-1.27Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.544 9.447a3.317 3.317 0 0 1-.37 2.106 3.569 3.569 0 0 1-1.6 1.5 3.82 3.82 0 0 1-2.22.327 3.72 3.72 0 0 1-2.002-.972 3.41 3.41 0 0 1-1.023-1.901 3.315 3.315 0 0 1 .343-2.11 3.561 3.561 0 0 1 1.58-1.52 3.819 3.819 0 0 1 2.216-.352c.775.11 1.493.452 2.046.979a3.408 3.408 0 0 1 1.03 1.943Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>   
             </div>
           </div>
         </div>
         <div class="footer__box">
-          <p class="footer__copyright">Copyright &copy; 2022 Philippines. All Rights Reserved</p>
-          <div class="footer__nav">
+          <p class="footer__copyright footer-animate">Copyright &copy; 2022 Philippines. All Rights Reserved</p>
+          <div class="footer__nav footer-animate">
             <ul class="footer__nav-list">
-              <li class="footer__nav-item"><a href="" class="footer__nav-link">HOME</a></li>
-              <li class="footer__nav-item"><a href="" class="footer__nav-link">ABOUT US</a></li>
-              <li class="footer__nav-item"><a href="" class="footer__nav-link">PROJECTS</a></li>
-              <li class="footer__nav-item"><a href="" class="footer__nav-link">SERVICES</a></li>
-              <li class="footer__nav-item"><a href="" class="footer__nav-link">CONTACT US</a></li>
+              <li class="footer__nav-item"><a href="index.html" class="footer__nav-link">HOME</a></li>
+              <li class="footer__nav-item"><a href="#team" class="footer__nav-link">ABOUT US</a></li>
+              <li class="footer__nav-item"><a href="#project" class="footer__nav-link">PROJECTS</a></li>
+              <li class="footer__nav-item"><a href="#cd" class="footer__nav-link">SERVICES</a></li>
+              <li class="footer__nav-item"><a href="#talk" class="footer__nav-link">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -123,7 +140,8 @@
 
     </div> <!-- CONTAINER END -->
 
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="app/js/gsap.js"></script>
   </body>
 </html>
