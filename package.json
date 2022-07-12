@@ -5,6 +5,7 @@
   "keywords": [],
   "author": "LNR",
   "license": "MIT",
+  "build": "node server.js",
   "dependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
