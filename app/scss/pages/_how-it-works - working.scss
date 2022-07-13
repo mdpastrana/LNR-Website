@@ -194,117 +194,71 @@
 // PROCESSES
 .processes {
   position: relative;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 3rem 7.5rem;
-  height: 100vh;
+  pointer-events: none !important;
 
-  @media only screen and (max-width: 67.5em) {
+  @media only screen and (max-width: 53.125em) {
     flex-direction: column;
+    margin-top: -20rem;
   }
 
-  @media only screen and (max-width: 56.25em) {
-    padding: 3rem;
+  @media only screen and (max-width: 31.25em) {
+    padding: 0 3rem;
   }
 
-  // @media only screen and (max-width: 53.125em) {
-  //   padding: 7.5rem 0 0 0;
-  // }
+  @media only screen and (max-width: 21.875em) {
+    margin-top: -25rem;
+  }
 
-  // @media only screen and (max-width: 31.25em) {
-  //   padding: 3rem 0 0 0;
-  // }
-
-  // @media only screen and (max-width: 53.125em) {
-  //   flex-direction: column;
-  //   margin-top: -20rem;
-  // }
-
-  // @media only screen and (max-width: 31.25em) {
-  //   padding: 0 3rem;
-  // }
-
-  // @media only screen and (max-width: 21.875em) {
-  //   margin-top: -25rem;
-  // }
-
-  // @media only screen and (max-width: 21.5625em) {
-  //   margin-top: -22rem;
-  // }
+  @media only screen and (max-width: 21.5625em) {
+    margin-top: -22rem;
+  }
 
   &__box {
     display: flex;
-    height: 100vh;
+    height: 120rem;
     flex: 1;
-    margin-left: -20rem;
 
-    @media only screen and (max-width: 67.5em) {
-      margin-left: 0;
+    @media only screen and (max-width: 53.125em) {
+      height: 66rem;
+      order: 1;
+      margin-bottom: 0rem;
     }
-
-    // @media only screen and (max-width: 53.125em) {
-    //   height: 66rem;
-    //   order: 1;
-    //   margin-bottom: 0rem;
-    // }
   }
 
   &__image {
-    width: 100%;
-    max-width: 80rem;
     height: 100%;
 
-    @media only screen and (max-width: 101.25em) {
-      width: 60rem;
+    @media only screen and (max-width: 87.5em) {
+      width: 50rem;
     }
 
-    @media only screen and (max-width: 91em) {
-      width: 55rem;
+    @media only screen and (max-width: 53.125em) {
+      width: 35rem;
     }
 
-    @media only screen and (max-width: 88em) {
-      width: 45rem;
+    @media only screen and (max-width: 31.25em) {
+      width: 28rem;
     }
 
-    @media only screen and (max-width: 78.125em) {
-      width: 40rem;
+    @media only screen and (max-width: 21.875em) {
+      width: 26rem;
     }
-
-    @media only screen and (max-width: 34.375em) {
-      width: 30rem;
-    }
-
-    @media only screen and (max-width: 26.25em) {
-      width: 20rem;
-    }
-
-    // @media only screen and (max-width: 53.125em) {
-    //   max-width: 35rem;
-    // }
-
-    // @media only screen and (max-width: 31.25em) {
-    //   max-width: 28rem;
-    // }
-
-    // @media only screen and (max-width: 21.875em) {
-    //   max-width: 26rem;
-    // }
   }
 
   &__content {
-    position: relative;
-    flex: 1;
-    margin-left: -10rem;
-    // position: absolute;
-    // top: 10.5%;
-    // right: 64%;
-    // transform: translate(-10.5%, -64%);
+    position: absolute;
+    top: 10.5%;
+    right: 64%;
+    transform: translate(-10.5%, -64%);
 
-    // @media only screen and (max-width: 87.5em) {
-    //   right: 58%;
-    //   top: 21.5%;
-    // }
+    @media only screen and (max-width: 87.5em) {
+      right: 58%;
+      top: 21.5%;
+    }
   }
 }
 
@@ -316,75 +270,57 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  // @media only screen and (max-width: 53.125em) {
-  //   margin-top: -25rem;
-  //   pointer-events: none;
-  // }
+  @media only screen and (max-width: 53.125em) {
+    margin-top: -25rem;
+    pointer-events: none;
+  }
 
-  // @media only screen and (max-width: 31.25em) {
-  //   margin-top: -20rem;
-  // }
+  @media only screen and (max-width: 31.25em) {
+    margin-top: -20rem;
+  }
 
   .mentor {
     position: absolute;
-    top: 50%;
-    transform: translateY(-40%);
-    right: 5rem;
+    top: 5rem;
+    left: -5rem;
     opacity: 0;
     transition: opacity 0.5s;
-
-    // @media only screen and (max-width: 88em) {
-    //   bottom: 8rem;
-    // }
-
-    // @media only screen and (max-width: 67.5em) {
-    //   top: 0;
-    // }
-
     &--show {
       opacity: 1;
     }
 
-    // @media only screen and (max-width: 53.125em) {
-    //   top: 10rem;
-    //   left: -12rem;
-    // }
+    @media only screen and (max-width: 53.125em) {
+      top: 10rem;
+      left: -12rem;
+    }
 
-    // @media only screen and (max-width: 21.875em) {
-    //   left: -10.5rem;
-    //   top: 13rem;
-    // }
+    @media only screen and (max-width: 21.875em) {
+      left: -10.5rem;
+      top: 13rem;
+    }
   }
 }
 
 .blade-box {
   position: relative;
-  width: 60rem;
+  width: 58rem;
   height: 100%;
   overflow: hidden;
-  padding-top: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -17rem;
 
-  @media only screen and (max-width: 34.375em) {
-    width: 50rem;
-  }
-
-  @media only screen and (max-width: 26.25em) {
+  @media only screen and (max-width: 53.125em) {
+    height: 0;
     width: 40rem;
   }
 
-  // @media only screen and (max-width: 26.25em) {
-  //   width: 45rem;
-  // }
-
-  // @media only screen and (max-width: 53.125em) {
-  //   height: 0;
-  //   width: 40rem;
-  // }
-
-  // @media only screen and (max-width: 31.25em) {
-  //   width: 30rem;
-  // }
+  @media only screen and (max-width: 31.25em) {
+    width: 30rem;
+  }
 }
 
 .circle-carousel {
@@ -462,14 +398,10 @@
   font-size: 1.5rem;
   line-height: 1;
   width: 25rem !important;
-  bottom: 1rem !important;
+  top: 0.3rem !important;
   left: 4rem !important;
   color: $color-red !important;
   pointer-events: none;
-
-  &--sm {
-    font-size: 1.3rem;
-  }
 }
 
 .active-text {
