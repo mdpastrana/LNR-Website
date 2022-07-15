@@ -238,6 +238,7 @@
     height: 100vh;
     flex: 1;
     margin-left: -20rem;
+    overflow: hidden;
 
     @media only screen and (max-width: 67.5em) {
       margin-left: 0;
@@ -328,7 +329,7 @@
 
   .mentor {
     position: absolute;
-    top: 50%;
+    top: 32%;
     transform: translateY(-40%);
     right: 5rem;
     opacity: 0;
